@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | A.L.L</title>
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+</head>
+
+<style>
+    .slides {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="a1-container">
+        <div class="w3-padding w3-xlarge w3-text-black">
+
+            <!-- <i class="fa fa-home"></i>
+           <i class="fa fa-search"></i>
+           <i class="fa fa-bars"></i>
+           <i class="fa fa-calendar"></i> -->
+
+            <!-- <p><button href="#" class="w3-btn w3-grey w3-large"><i class="w3-margin-left fa fa-home"></i></button></p> -->
+            <!-- <p><button href="#" class="w3-btn w3-grey w3-large"><i class="w3-margin-left fa fa-search"></i></button></p> -->
+            <!-- <p><button href="#" class="w3-btn w3-grey w3-large"><i class="w3-margin-left fa fa-bars"></i></button></p> -->
+        </div>
+    </div>
+
+
+    <header class="hero">
+        <nav>
+            <ul>
+                <li><a href="#"> <i class="fa fa-home"></i> </a></li>
+                <li><a href="#"> <i class="fa fa-bars"></i> </a></li>
+                <li><a href="#"> <i class="fa fa-calendar"></i> </a></li>
+                <!-- <li><a href="#"> <i class="fa fa-search"></i> </a></li> -->
+
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <article>
+                <header>
+                    <h2>Reforma Faculdade Qualittas</h2>
+                </header>
+                <div class="w3-container">
+                    <p>Reforma feita na <a href="https://www.qualittas.com.br/">Faculdade Qualittas</a>,
+                        foram feitas reformas de transformação da área externa e inetrnas.
+                        Na parte interna foi feito a integração do banheiro
+                        existente com a cozinha que virou quarto de hospedes</p>
+                    <a href="#" class="btn">Clique aqui e saiba mais</a>
+                </div>
+
+                <div class="w3-content w3-display-container">
+
+                    <div class="w3-display-container slides">
+                        <img src="./imagens/AREA EXTERNA 9.jpg" style="width:45%">
+                        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black"></div>
+                    </div>
+
+                    <div class="w3-display-container slides">
+                        <img src="./imagens/AREA EXTERNA 3.jpg" style="width:45%">
+                        <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black"></div>
+                    </div>
+
+                    <div class="w3-display-container slides">
+                        <img src="./imagens/AREA EXTERNA 10.jpg" style="width:45%">
+                        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black"></div>
+                    </div>
+
+                    <div class="w3-display-container slides">
+                        <img src="./imagens/AREA EXTERNA 11.jpg" style="width:45%">
+                        <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black"></div>
+                    </div>
+                    <div class="w3-display-container slides">
+                        <img src="./imagens/AREA EXTERNA 12.jpg" style="width:45%">
+                        <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black"></div>
+                    </div>
+
+                    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+            </article>
+
+            <article>
+                <header>
+                    <h2>CCR</h2>
+                </header>
+                <div class="w3-container">
+                    <p>CCR reforma de faixada do prédio novo referente a Linha de metrô da cidade de Osasco.
+                        Foram feitos as faixadas.</p>
+                    <a href="https://www.grupoccr.com.br/negocios/mobilidade-urbana" class="btn">Saiba mais</a>
+                    <img src="./imagens/LOGO CCR.jpg" style="width:25%">
+                </div>
+                
+                <!-- <div class="w3-content w3-display-container">
+                
+                    <div class="w3-display-container slides">
+                
+                        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+                        
+                    </div>
+                </div> -->
+            </article>
+
+            <article>
+                <header>
+                    <h2>Reforma?</h2>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur sunt error atque dolor ducimus dolore mollitia
+                    deserunt molestiae voluptatibus architecto earum nesciunt
+                    amet nostrum incidunt minus iure,
+                    asperiores iste voluptas..</p>
+                <a href="#" class="btn">Saiba mais</a>
+            </article>
+
+        </section>
+
+    </main>
+
+    <div>
+
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            let i;
+            let x = document.getElementsByClassName("slides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+
+    <footer class="rodape">
+        Copyright &copy; 2023
+    </footer>
+</body>
+
+</html>
